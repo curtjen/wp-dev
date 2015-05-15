@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
+# Set term name lest stuff breaks.
+export TERM=ansi
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -80,8 +81,6 @@ source $ZSH/oh-my-zsh.sh
 
 #my aliases
 alias ls="ls -G"
-alias cvps='./casper --live --bh apps/signup/signup_test.js -c="--vps --self_destruct=1" -d'
-alias epoch='date +%s | pbcopy'
 
 bindkey -e
 
