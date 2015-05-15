@@ -7,6 +7,7 @@ If you run OSX, then you have to install boot2docker first. Docker requires cert
 You can get the latest boot2docker installer here: https://github.com/boot2docker/osx-installer/releases/latest
 Then follow normal steps to install OSX apps.
 Before you can run docker commands, you need to run:
+
 `boot2docker init`
 
 `boot2docker start`
