@@ -30,7 +30,7 @@ Then run your mysql container:
 
 Then run your WordPress container with a link to the mysql container:
 
-`docker run --name wp-dev-wordpress --link yourmysqlname:mysql -p 8080:80 -d wp-dev`
+`docker run --name wp-dev-wordpress --link wp-dev-mysql:mysql -p 8080:80 -d wp-dev`
 
 If you're running linux, you can reach your WordPress install at `localhost:8080`.
 If you're running OSX, run `boot2docker ip`. You can access WordPress at `ip:8080`.
