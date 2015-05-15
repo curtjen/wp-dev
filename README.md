@@ -8,8 +8,10 @@ You can get the latest boot2docker installer here: https://github.com/boot2docke
 Then follow normal steps to install OSX apps.
 Before you can run docker commands, you need to run:
 `boot2docker init`
+
 `boot2docker start`
-`eval "$(boot2docker shellinit)"
+
+`eval "$(boot2docker shellinit)"`
 
 IF you're running Windows, I can't help you, good luck. Luckily there are some instructions: http://docs.docker.com/installation/windows/
 
