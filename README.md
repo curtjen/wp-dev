@@ -18,12 +18,15 @@ If you're running linux, it's pretty easy to get docker installed. You can find 
 ## Running wp-dev
 
 Once you have docker installed, checkout this repo then run this command in the directory:
+
 `docker build -t wp-dev .`
 
 Then run your mysql container:
+
 `docker run --name wp-dev-mysql -e MYSQL_ROOT_PASSWORD=yourpassword -d mysql`
 
 Then run your WordPress container with a link to the mysql container:
+
 `docker run --name wp-dev-wordpress --link yourmysqlname:mysql -p 8080:80 -d wp-dev`
 
 If you're running linux, you can reach your WordPress install at `localhost:8080`.
