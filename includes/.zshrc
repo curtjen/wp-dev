@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 
 #my aliases
 alias ls="ls -G"
+alias wp="/usr/local/bin/wp --allow-root"
 
 bindkey -e
 
